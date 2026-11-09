@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cavalei</title>
-<meta name="description" content="Cavalei 的个人主页 —— 一些工具与项目">
+<title>Cavalei · 工具与项目</title>
+<meta name="description" content="Cavalei 的个人主页 —— 系统维护、数据恢复与一些解决具体小问题的工具。">
+<meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:,">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,54 +13,105 @@
 
 <header class="hero">
   <div class="hero-inner">
-    <h1>Cavalei</h1>
-    <p class="tagline">折腾些能用的东西。</p>
+    <p class="eyebrow">Cavalei</p>
+    <h1>折腾些<br>能用的东西。</h1>
+    <p class="tagline">系统维护、数据恢复、游戏模组。单文件、免安装、离线可跑。</p>
+    <nav class="hero-links">
+      <a href="https://github.com/cavalei" target="_blank" rel="noopener">GitHub</a>
+      <a href="#projects">项目</a>
+      <a href="#about">关于</a>
+    </nav>
   </div>
 </header>
 
 <main>
 
   <section id="projects">
-    <h2>项目</h2>
+    <div class="sec-head">
+      <h2>项目</h2>
+      <span class="count">5 个</span>
+    </div>
+
+    <h3 class="group">工具</h3>
     <ul class="cards">
-        <li>
-          <a class="card" href="https://github.com/cavalei/PCL2-/releases/latest">
-            <h3>PCL 整合包解锁器 <span class="badge">工具</span></h3>
-            <p>为 PCL 2.99 恢复整合包安装能力的第三方修改器。单文件、离线运行、不联网，支持三种官方构建，产物哈希可复现。</p>
-          </a>
-        </li>
-
-
       <li>
-        <a class="card" href="https://github.com/cavalei/Rescue-USB-By-Cavalei">
-          <h3>救急 U 盘 <span class="badge">框架</span></h3>
-          <p>Windows 救急盘的构建与分发框架：Ventoy 引导、十类工具目录、SHA256 校验台账、一键复刻到新盘。</p>
+        <a class="card" href="https://github.com/cavalei/PCL2-/releases/latest" target="_blank" rel="noopener">
+          <div class="card-top">
+            <h4>PCL 整合包解锁器</h4>
+            <span class="badge b-tool">工具</span>
+          </div>
+          <p>为 PCL 2.99 恢复整合包安装能力的第三方修改器。单文件、离线运行、不联网，支持三种官方构建，产物哈希可复现。</p>
+          <div class="meta"><span>2.99.0.0 / 2.99.0.1</span><span>Release</span></div>
         </a>
       </li>
-
       <li>
-        <a class="card" href="https://github.com/cavalei/small-tools">
-          <h3>小工具合集 <span class="badge">工具</span></h3>
+        <a class="card" href="https://github.com/cavalei/small-tools" target="_blank" rel="noopener">
+          <div class="card-top">
+            <h4>小工具合集</h4>
+            <span class="badge b-tool">工具</span>
+          </div>
           <p>TxtReader 文本阅读器、HashChecker 哈希校验、压缩包密码恢复。单文件、免安装、即开即用。</p>
+          <div class="meta"><span>3 个工具</span><span>源码开放</span></div>
         </a>
       </li>
+    </ul>
 
+    <h3 class="group">框架</h3>
+    <ul class="cards">
+      <li>
+        <a class="card" href="https://github.com/cavalei/Rescue-USB-By-Cavalei" target="_blank" rel="noopener">
+          <div class="card-top">
+            <h4>救急 U 盘</h4>
+            <span class="badge b-kit">框架</span>
+          </div>
+          <p>Windows 救急盘的构建与分发框架：Ventoy 引导、十类工具目录、SHA256 校验台账、一键复刻到新盘。</p>
+          <div class="meta"><span>Ventoy</span><span>SHA256 台账</span></div>
+        </a>
+      </li>
+    </ul>
+
+    <h3 class="group">游戏模组</h3>
+    <ul class="cards">
+      <li>
+        <a class="card" href="https://github.com/cavalei/CaDOFAI_modpack" target="_blank" rel="noopener">
+          <div class="card-top">
+            <h4>CaDOFAI</h4>
+            <span class="badge b-mod">模组</span>
+          </div>
+          <p>A Dance of Fire and Ice 的 Overlayer UMM 移植版，附带自研严判预测模块 StrictJudge。主界面不渲染画布，关卡内自动接管。</p>
+          <div class="meta"><span>GPL-3.0</span><span>v2.1</span><span>ADOFAI 3.4.0</span></div>
+        </a>
+      </li>
+      <li>
+        <a class="card" href="https://github.com/cavalei/CaDOFAI_modpack/releases/tag/v2.1" target="_blank" rel="noopener">
+          <div class="card-top">
+            <h4>CaDOFAI 安装包</h4>
+            <span class="badge b-dl">下载</span>
+          </div>
+          <p>自解压安装包，解压到游戏根目录即可。内含 Overlayer、ADOFAI 模块与 StrictJudge 三个 DLL。</p>
+          <div class="meta"><span>28 MB</span><span>Windows</span></div>
+        </a>
+      </li>
     </ul>
   </section>
 
   <section id="about">
-    <h2>关于</h2>
-    <p>
+    <div class="sec-head">
+      <h2>关于</h2>
+    </div>
+    <p class="lede">
       业余折腾系统维护、数据恢复，以及一些解决具体小问题的工具。
       这里记录自己做过的东西，也顺手分享出来。
     </p>
-    <p class="links">
-      <a href="https://github.com/cavalei">GitHub</a>
+    <p class="kv">
+      <span>联系方式</span>
+      <a href="https://github.com/cavalei" target="_blank" rel="noopener">github.com/cavalei</a>
     </p>
   </section>
 
   <footer>
-    <p>© 2026 Cavalei · 本站内容采用 MIT 许可</p>
+    <p>© 2026 Cavalei</p>
+    <p class="fine">本站内容除另有说明外采用 MIT 许可；CaDOFAI 依上游要求以 GPL-3.0 发布。</p>
   </footer>
 
 </main>
